@@ -6,6 +6,7 @@ This traditional web application architectural solution utilizes AWS Cloud compu
 
 ---
 
+## Infrastructure ##
 Amazon Route 53 offers DNS services to simplify domain management. Route 53 serves multiple functions, including domain registration, DNS routing, and health monitoring, making it a crucial component for managing traffic to web applications in the cloud.
 
 Amazon CloudFront is utilized to deliver both static and dynamic content. CloudFront is capable of caching frequently accessed content to minimize latency. Amazon S3 is used for storing static assets such as images and videos.
@@ -19,7 +20,7 @@ AWS Auto Scaling works together with Amazon CloudWatch to collect metrics data a
 ## Problem Statement ## 
 The promotional event increased the web traffic and overloaded the travel agency website. All requests were being timed out. The EC2 instances were also hosted in an availability zone that was affected by severe storms which caused the application to be offline for hours.
 
-## Solution: 
+## Solution ## 
 Designed and deployed an Application Load Balancer, with a minimum of three EC2 instances, across three availability zones. The AWS services I integrated in the application were Auto Scaling Group and Application Load Balancer.
 
 Here’s a break down of the step-by-step solution explaining how I integrated each service in detail:
@@ -66,7 +67,8 @@ I utilized the safety and dependability offered by geographic redundancy, spread
 
 If one availability zone becomes unhealthy or is unavailable, EC2 Auto Scaling initiates a new instance in an unaffected availability zone. Auto Scaling tries to launch new instances in the availability zone that has the fewest instances.
 
-To summarize, creating a cloud infrastructure that includes auto scaling, load balancing, and health checks is crucial for enabling your application to effectively manage fluctuating traffic levels while ensuring high availability and dependability. As a certified AWS solutions architect, utilizing AWS services like Elastic Load Balancing, Auto Scaling Groups, and Health Checks enables you to build a dynamic and resilient environment that can scale effortlessly with demand.
+## Conclusion ##
+Creating a cloud infrastructure that includes auto scaling, load balancing, and health checks is crucial for enabling your application to effectively manage fluctuating traffic levels while ensuring high availability and dependability. As a certified AWS solutions architect, utilizing AWS services like Elastic Load Balancing, Auto Scaling Groups, and Health Checks enables you to build a dynamic and resilient environment that can scale effortlessly with demand.
 
 Auto scaling allows your infrastructure to adapt in real-time to changes in traffic, thereby avoiding both over-provisioning and under-provisioning. Load balancing ensures that traffic is evenly distributed among multiple instances, preventing any single server from becoming overwhelmed and contributing to fault tolerance. Regarding health checks, they improve the application’s reliability by automatically replacing instances that are not functioning properly, thereby minimizing downtime and optimizing performance.
 
