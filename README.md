@@ -16,7 +16,7 @@ EC2 Auto Scaling Groups assist in efficiently managing your computing resources 
 
 AWS Auto Scaling works together with Amazon CloudWatch to collect metrics data and with Elastic Load Balancing to manage the addition and removal of hosts for traffic control. For example, if a web server consistently exceeds 80 percent CPU utilization, another web server can be swiftly launched and seamlessly incorporated into the load balancer.
 
-## Problem Statement: 
+## Problem Statement ## 
 The promotional event increased the web traffic and overloaded the travel agency website. All requests were being timed out. The EC2 instances were also hosted in an availability zone that was affected by severe storms which caused the application to be offline for hours.
 
 ## Solution: 
