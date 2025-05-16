@@ -4,6 +4,8 @@
 
 This traditional web application architectural solution utilizes AWS Cloud computing infrastructure to guarantee high availability, security and scalability of the application.
 
+---
+
 Amazon Route 53 offers DNS services to simplify domain management. Route 53 serves multiple functions, including domain registration, DNS routing, and health monitoring, making it a crucial component for managing traffic to web applications in the cloud.
 
 Amazon CloudFront is utilized to deliver both static and dynamic content. CloudFront is capable of caching frequently accessed content to minimize latency. Amazon S3 is used for storing static assets such as images and videos.
@@ -14,9 +16,11 @@ EC2 Auto Scaling Groups assist in efficiently managing your computing resources 
 
 AWS Auto Scaling works together with Amazon CloudWatch to collect metrics data and with Elastic Load Balancing to manage the addition and removal of hosts for traffic control. For example, if a web server consistently exceeds 80 percent CPU utilization, another web server can be swiftly launched and seamlessly incorporated into the load balancer.
 
-Problem Statement: The promotional event increased the web traffic and overloaded the travel agency website. All requests were being timed out. The EC2 instances were also hosted in an availability zone that was affected by severe storms which caused the application to be offline for hours.
+## Problem Statement: 
+The promotional event increased the web traffic and overloaded the travel agency website. All requests were being timed out. The EC2 instances were also hosted in an availability zone that was affected by severe storms which caused the application to be offline for hours.
 
-Solution: Designed and deployed an Application Load Balancer, with a minimum of three EC2 instances, across three availability zones. The AWS services I integrated in the application were Auto Scaling Group and Application Load Balancer.
+## Solution: 
+Designed and deployed an Application Load Balancer, with a minimum of three EC2 instances, across three availability zones. The AWS services I integrated in the application were Auto Scaling Group and Application Load Balancer.
 
 Here’s a break down of the step-by-step solution explaining how I integrated each service in detail:
 
